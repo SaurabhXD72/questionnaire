@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head><!--footer-->
+  
+  
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <title>Care For</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	/* resize the image(s) on page load */
+	$(document).ready(function() {
+		resize_all_parallax();
+	});
+
+	/* resize the image(s) on page resize */
+	$(window).on('resize', function(){
+		resize_all_parallax();
+	});
+
+	/* keep all of your resize function calls in one place so you don't have to edit them twice (on page load and resize) */
+	function resize_all_parallax() {
+		var div_id = 'img1'; /* the ID of the div that you're resizing */
+		var img_w = 960; /* the width of your image, in pixels */
+		var img_h = 770; /* the height of your image, in pixels */
+		resize_parallax(div_id,img_w,img_h);
+	}
+
+	/* this resizes the parallax image down to an appropriate size for the viewport */
+	function resize_parallax(div_id,img_w,img_h) {
+		var div = $('#' + div_id);
+		var divwidth = div.width();
+		if (divwidth < 769) { var pct = (img_h/img_w) * 105; } /* show full image, plus a little padding, if on static mobile view */
+		else { var pct = 60; } /* this is the HEIGHT as percentage of the current div WIDTH. you can change it to show more (or less) of your image */
+		var newheight = Math.round(divwidth * (pct/100));
+		newheight = newheight  + 'px';
+		div.height(newheight);
+	}
+</script>
+    
+  </head>
+
+  <body>
+      <!-- Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="mainNav">
+          <div class="container">
+              <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="logo">Covid-19 Survey</span>
+              </a>
+              <button class="navbar-toggler navbar-toggler-right" 
+              type="button" data-toggle="collapse" data-target="#navbarResponsive" 
+              aria-controls="navbarResponsive" aria-expanded="false" 
+              aria-label="Toggle navigation">Menu
+              <i class="fas fa-bars ml-1"></i>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav text-uppercase ml-auto">
+                      <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+                 
+                  <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#project">Surveys</a></li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="https://www.covidresourcesindia.com/">Help</a></li>
+                  
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- Hero-->
+      <div class="parallax_img" id="img1"></div>
+
+      <!--<div class="block">
+        <img src="images/saurabh.jpeg" data-speed="-1" class="img-parallax">
+        <h2>Parallax Chutiya</h2>
+      </div>-->
+      <header class="hero">
+          <div class="container">
+          <!--<div class="hero-heading text-uppercase">We care for you </div>
+        <a class="btn  btn-lg text-uppercase js-scroll-trigger" href="#project"
+        ></a>
+        <img class="main-banner" src="images/pandemic.webp" alt="">
+        <img  class="main-banner" src="images/b2.jpg" class="img-fluid"
+         alt="Responsive image" width="100%" height="100%">-->
+         <section class="module parallax parallax-1">
+          <div class="container">
+            
+
+            
+           
+          </div>
+        </section>
+          </div>
+      </header>
+      <!--end of Hero Image-->
+      <!-- Major Causes-->
+      <section class="mt-5 page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase font-weight-bold">Important Measures</h2>
+                <h3 class="section-subheading text-muted">
+                  </h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                      <!--<i class="fas fa-circle fa-stack-2x text-danger"></i>
+                      
+                      
+                      <i class="fas fa-hand-holding-usd fa-stack-1x fa-inverse"></i>-->
+                      <img class="img-fluid" src="images/protect-1.png" alt="">
+                      
+                    </span>
+                    <h4 class="my-3">.</h4>
+                    <h4 class="my-3">Wear Mask</h4>
+                    <p class="text-muted">Make sure your mask covers your nose,mouth and chin</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                      <!--<i class="fas fa-circle fa-stack-2x text-warning"></i>
+                      <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>-->
+                      <img class="img-fluid" src="images/protect-2.png" alt="">
+                      </span>
+                      <h4 class="my-3">.</h4>
+                    <h4 class="my-3">Wash hands</h4>
+                    <p class="text-muted">Practice frequent hand washing even if your hands are not visibly dirty</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                     <!-- <i class="fas fa-circle fa-stack-2x text-success"></i>
+                      <i class="fas fa-tshirt fa-stack-1x fa-inverse"></i>-->
+                      <img class="img-fluid" src="images/protect-3.png" alt="">
+                    </span>
+                    <h4 class="my-3">.</h4>
+                    <h4 class="my-3">Maintain Distance</h4>
+                    <p class="text-muted">It is important to stay at least 6 feet away from others when possible, even if you or they do not have any symptoms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- End of Major Causes-->
+      <!--Project Section-->
+     <section class="proj-section bg-light py-5" id="project">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Surveys</h2>
+                <h3 class="section-subheading text-muted">
+                  Your contribution is valuable,Please choose the survey which fits you the most!</h3>
+            </div>
+            <div class="row">
+              <!---Project 1-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                     <a class="project-link" data-toggle="modal"
+                       href="#projectModal1">
+                       <div class="project-hover">
+                       <div class="project-hover-content">
+                         <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                    <img src="images/employee.jpg" class="img-fluid" alt=""></a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Employees</div>
+                            <div class="project-caption-subheading text-muted">
+                                
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- End of Project 1-->
+                <!---Project 2-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                        <a class="project-link" data-toggle="modal" 
+                        href="#projectModal2"
+                            ><div class="project-hover">
+                                <div class="project-hover-content">
+                                  <i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="images/Small business logistics.jpg" alt=""
+                        /></a>
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Small Business Owners</div>
+                            <div class="project-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 2-->
+                <!--Project 3-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="project-item">
+                   <a class="project-link" data-toggle="modal"href="#projectModal3"
+                            ><div class="project-hover">
+                                <div class="project-hover-content">
+                                  <i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                      <img class="img-fluid" src="images/s1.jpg" alt=""></a>
+                        <div class="project-caption">
+                       <div class="project-caption-heading">Students</div>
+                  <div class="project-caption-subheading text-muted"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Project 3-->
+                <!--Project4 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="project-item">
+                 <a class="project-link" data-toggle="modal"href="#projectModal4"
+                          ><div class="project-hover">
+                              <div class="project-hover-content">
+                                <i class="fas fa-plus fa-3x"></i></div>
+                          </div>
+                    <img class="img-fluid" src="images/Doctor.jpg" alt=""></a>
+                      <div class="project-caption">
+                     <div class="project-caption-heading">Doctors</div>
+                <div class="project-caption-subheading text-muted"></div>
+                      </div>
+                  </div>
+              </div>
+              <!--End of Project 4-->
+              <!--Project5 -->
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="project-item">
+               <a class="project-link" data-toggle="modal"href="#projectModal5"
+                        ><div class="project-hover">
+                            <div class="project-hover-content">
+                              <i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                  <img class="img-fluid" src="images/fw.jpg" alt=""></a>
+                    <div class="project-caption">
+                   <div class="project-caption-heading">Frontline-Workers</div>
+              <div class="project-caption-subheading text-muted"></div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Project 5-->
+                <!--Project6 -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="project-item">
+                 <a class="project-link" data-toggle="modal"href="#projectModal6"
+                          ><div class="project-hover">
+                              <div class="project-hover-content">
+                                <i class="fas fa-plus fa-3x"></i></div>
+                          </div>
+                    <img class="img-fluid" src="images/covidsur.jpg" alt=""></a>
+                      <div class="project-caption">
+                     <div class="project-caption-heading">Post-Covid Survivors</div>
+                <div class="project-caption-subheading text-muted"></div>
+                      </div>
+                  </div>
+              </div>
+              <!--End of Project 6-->
+                             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Project Section-->
+    <!---About us-->
+<!-- About-->
+<section class="about-section mt-5" id="about">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">COVID-19 Impact</h2>
+          <h3 class="section-subheading text-muted">A devastating second wave of coronavirus in 
+              India has seen hospitals and crematoriums
+               overwhelmed and widespread shortages of oxygen and medicines.
+               Case numbers and deaths in India are continuing to rise fast, fuelled by a new variant.
+               But the true numbers of cases and deaths are likely to be higher than the numbers 
+               provided by authorities, with many people avoiding testing or struggling to access it. 
+               Many deaths in rural areas also go unregistered.
+
+Testing is increasing, but so too are the number of positive results. 
+            
+            </h3>
+      </div>
+      <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+             <img src="images/do-img.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" 
+          data-aos="fade-left">
+            <h3>Why are we conducting survey?</h3>
+            <p>We are conducting a survey to help us better understand how the novel coronavirus(COVID-19)pandemic
+                 is affecting people’s lives. To help us better understand how people’s physical,
+                  emotional and mental health are being affected, we would like to ask you questions about 
+                  your possible exposure to the virus, your experiences with testing and treatment and some
+                   questions about how your life 
+                has changed as a result of COVID-19 and the preventive measures that have been put in place.  </p>
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon"><i class="fas fa-syringe"></i></div>
+              <h4 class="title"><a href="https://www.cowin.gov.in/home">Register Yourself for Vaccination</a></h4>
+              <p class="description">The COVID-19 vaccines produce protection against the disease,
+                   as a result of developing an immune response to the SARS-Cov-2 virus.
+                     Developing immunity through vaccination
+                   means there is a reduced risk of developing the  illness and its consequences. </p>
+            </div>
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon"><i class="fas fa-bed"></i></div>
+              <h4 class="title"><a href="https://www.mysmartprice.com/gear/hospital-bed-availability-online-covid/">Beds availability near you!</a></h4>
+              <p class="description"> Finding a bed during this time of emergency is very crucial for 
+                everyone. Interestingly, almost all the state governments have set a dedicated portal 
+                through which you can easily track the online availability of beds and more. Here’s
+                 what you need to know about the portals for different cities and states.</p>
+            </div>
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon">
+                <i class="fas fa-lungs"></i>
+                </div>
+              <h4 class="title"><a href="https://www.91mobiles.com/hub/covid-19-oxygen-bed-icu-check-online-availability/">Oxygen availability near you!</a></h4>
+              <p class="description">The COVID-19 outbreak in India right now has been 
+                expanding through tremendous surges, with lakhs of new cases daily and many thousands of patients
+                 requiring high volumes of oxygen just to survive.</p>
+            </div>
+
+        
+          
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+       
+
+   <!-- Team
+   <section class="team-section mt-5"  id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="team-member box">
+                  <div class="img-box">
+                    <img src="images/p.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h4 class="text-dark">Symptoms</h4>
+                    <p class="text-muted"><a href="">CLICK ME</a></p>
+                     </div>
+                      </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member box">
+                  <div class="img-box">
+                    <img src="images/b.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h4 class="text-dark">Precautions</h4>
+                    <p class="text-muted"><a href="">CLICK ME</a></p>
+                     </div>
+                      </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="team-member box">
+                  <div class="img-box">
+                    <img src="images/su.png" alt="">
+                  </div>
+                  <div class="content">
+                    <h4 class="text-dark">Help-Line</h4>
+                    <p class="text-muted"><a href="">CLICK ME</a></p>
+                     </div>
+                      </div>
+            </div>
+          
+       </div>
+    </div>
+</section>-->
+
+              
+
+
+ <!-- Project Modals-->
+ <!-- Modal 1-->
+ <div class="project-modal modal fade" 
+ id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <i class="fas fa-window-close"></i>
+            </div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="modal-body">
+              <!-- Project Details Go Here-->
+                <h2 class="text-uppercase">Employees</h2>
+               <p class="item-intro text-muted"> <p class="text-muted">
+                  
+                   Coronavirus pandemic brought the economy of India to a halt over the past one year,
+                   A large part of India's workforce belongs to informal sectors which was
+                    impacted in terms of job losses.  
+                    this survey will lead us to understand the exact situation one is facing. </p>
+                 </p>
+                 
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdR3QnKzoEhBhk4IuJ4VZGo5EihEEAtMY-YcP7VrTv3NL4sUA/viewform?usp=sf_link" class="btn btn-info" role="button">
+                    CLICK ME FOR THE SURVEY</a>
+
+             <img class="img-fluid d-block mx-auto" src="images/emp.png" alt="" />
+           <p></p>
+         
+                          <button class="btn btn-danger" 
+                          data-dismiss="modal" type="button">
+                          <i class="fas fa-times mr-1"></i>Close Survey</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal 2-->
+<div class="project-modal modal fade" 
+id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <i class="fas fa-window-close"></i></div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="modal-body">
+                          <!-- Project Details Go Here-->
+                          <h2 class="text-uppercase">Small Business</h2>
+                          <p class="item-intro text-muted"> <p class="text-muted">
+                            Covid-19 has created a great impact for small businesses across India.
+                             Nevertheless, it has not only restricted its impact to small businesses, 
+                             but also extended to India's labour market; nationally & internationally.
+
+                           
+                            </p>
+                          </p>
+                          
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSefkZW0AkE76xykWMCMZ2K3nyNssB-i0kXEL_TCDfBybQCJ_Q/viewform?usp=sf_link" class="btn btn-info" role="button">
+                             CLICK ME FOR THE SURVEY</a>
+         
+                      <img class="img-fluid d-block mx-auto" src="images/bus.jpg" alt="" />
+                    <p></p>
+                  
+                                   <button class="btn btn-danger" 
+                                   data-dismiss="modal" type="button">
+                                   <i class="fas fa-times mr-1"></i>Close Survey</button>
+                
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal 3-->
+<div class="project-modal modal fade" id="projectModal3" 
+tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="modal-body">
+                 <!-- Project Details Go Here-->
+                 <h2 class="text-uppercase">Students</h2>
+                 <p class="item-intro text-muted"> <p class="text-muted">
+                  
+                    The impact of pandemic COVID-19 is observed in every sector around the world.
+                     The education sectors of India as well as world are badly affected by this. 
+                     It has enforced the world wide lock down creating very bad effect on the students' life.
+                      Around 32 crore learners
+                     stopped to move schools/colleges, all educational activities halted in India </p>
+                  </p>
+                  
+                  <a href="https://forms.gle/vLW3oi8Nw7ZNBkgP7" class="btn btn-info" role="button">
+                     CLICK ME FOR THE SURVEY</a>
+ 
+              <img class="img-fluid d-block mx-auto" src="images/School-2.jpg" alt="" />
+            <p></p>
+          
+                           <button class="btn btn-danger" 
+                           data-dismiss="modal" type="button">
+                           <i class="fas fa-times mr-1"></i>Close Survey</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal 4-->
+<div class="project-modal modal fade" 
+id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                   <div class="modal-body">
+                    <!-- Project Details Go Here-->
+                    <h2 class="text-uppercase">Doctors</h2>
+                    <p class="item-intro text-muted"> <p class="text-muted">
+                  
+                        Doctors have experienced huge performance pressure as well as increased 
+                        unfavourable psychiatric outcomes due to overwork, inadequate protection
+                         from contamination and frustration from failure to provide optimal patient care.
+                         Several factors contribute to the distress of doctors, including 
+                         feelings of vulnerability or loss of control and concerns about self-health,
+                          spreading the virus to their family and others and being isolated. In addition, 
+                          they must dealing with critically ill patients with a high tendency 
+                         to develop complications and an increased mortality rate. </p>
+                      </p>
+                      
+                      <a href="https://forms.gle/jZjXEVTkQU4W4fWX8" class="btn btn-info" role="button">
+                         CLICK ME FOR THE SURVEY</a>
+     
+                  <img class="img-fluid d-block mx-auto" src="images/doc.jpg" alt="" />
+                <p></p>
+              
+                               <button class="btn btn-danger" 
+                               data-dismiss="modal" type="button">
+                               <i class="fas fa-times mr-1"></i>Close Survey</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal 5-->
+<div class="project-modal modal fade" id="projectModal5" 
+tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="modal-body">
+                          <!-- Project Details Go Here-->
+                          <h2 class="text-uppercase">Frontline-Workers</h2>
+                          <p class="item-intro text-muted"> <p class="text-muted">
+                  
+                            As the world is battling the COVID-19 pandemic,
+                             frontline health care workers (HCWs) are among the 
+                             most vulnerable groups at risk of mental health problems.
+                             The many risks to the wellbeing of HCWs are not well understood.
+                             In terms of mental health impact of epidemics, HCWs represent a particularly 
+                             vulnerable group due to the high risk of infection,
+                              increased work stress and fear of spreading to their families </p>
+                          </p>
+                          
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLScw57wnwvfsMFCIi-eR9_NjM6aO38UvLv8k1XChIITbulNBjQ/viewform?usp=sf_link" class="btn btn-info" role="button">
+                             CLICK ME FOR THE SURVEY</a>
+         
+                      <img class="img-fluid d-block mx-auto" src="images/front.png" alt="" />
+                    <p></p>
+                  
+                                   <button class="btn btn-danger" 
+                                   data-dismiss="modal" type="button">
+                                   <i class="fas fa-times mr-1"></i>Close Survey</button>
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal 6-->
+<div class="project-modal modal fade" id="projectModal6" 
+tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="modal-body">
+                          <!-- Project Details Go Here-->
+                          <h2 class="text-uppercase">Covid-Survivors</h2>
+                          <p class="item-intro text-muted"> <p class="text-muted">
+                  
+                            Most people who have coronavirus disease 2019 (COVID-19) recover completely
+                             within a few weeks. But some people — even those who had mild versions of the 
+                            disease — continue to experience symptoms after their initial recovery.
+                            Even people who did not have symptoms when they were infected can have
+                             post-COVID conditions. These conditions can have different types and combinations of
+                             health problems for different lengths of time. </p>
+                          </p>
+                          
+                          <a href="https://forms.gle/SWkdJDob3yHHDeuZ9" class="btn btn-info" role="button">
+                             CLICK ME FOR THE SURVEY</a>
+         
+                      <img class="img-fluid d-block mx-auto" src="images/s2.jpg" alt="" />
+                    <p></p>
+                  
+                                   <button class="btn btn-danger" 
+                                   data-dismiss="modal" type="button">
+                                   <i class="fas fa-times mr-1"></i>Close Survey</button>
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+ 
+
+ <!-- ======= Footer ======= -->
+ 
+
+
+
+
+<!-- End Footer -->
+
+     
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <h3>\m/ Meet our Team \m/</h3>
+    <!--<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>-->
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 item">
+                    
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Saurabh Deshmukh_dev</a></li>
+                        <li><a href="https://instagram.com/____issue___?igshid=leokfi4wcjfg">Vaishnavi Dubey_dev</a></li>
+                        <li><a href="https://www.linkedin.com/in/jatin-pahuja-330a10165/">Jatin Pahuja_HR</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 item">
+                   
+                    <ul>
+                        <li><a href="https://www.instagram.com/sagar_dalal_23/">Sagar Dalal_analyst</a></li>
+                        <li><a href="https://www.instagram.com/sunnychinchore/">Sunny Chinchore_analyst</a></li>
+                        <li><a href="https://www.linkedin.com/in/anurag-fulare-27b290168/">Anurag Fulare_analyst</a></li>
+                    </ul>
+                </div>
+                
+               
+            
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="container" >
+    <h1>Adam_dev <a href="https://www.instagram.com/algen_rad12.5/"></h1>
+    <h1>Adam_dev</h1>
+    <h1>Adam_dev</h1>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
